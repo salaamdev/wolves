@@ -1,20 +1,20 @@
 # need help? contact me on discord  RedScorpion#5785
-# for visual toturial, this script is explained on youtube, open this link
+# for visual toturial, this script is explained on youtube, open this link on your browser
 # https://www.youtube.com/watch?v=QEoIjWfHf2c
-# full documentation on how to use this script is on git hub, open this link
-# https://github.com/RedScorpX/WolvesVilleAutoAds/
-# follow the code, where it says changes are required, change them accordingly
+# full documentation on how to use this code is on git hub, open this link on your browser
+# https://github.com/capRS/wolves/
 
 import pyautogui as gui
 import win32api as win
-import win32con
 import keyboard
-import time
+import win32con
 import numpy
+import time
 
 time.sleep(5)
 
 
+# given x and y are the mouse coordinates, this sends a left click
 def click(x, y):
     win.SetCursorPos((x, y))
     win.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 0, 0)
@@ -22,7 +22,7 @@ def click(x, y):
     win.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0)
 
 
-# changes required
+# finds the watch video button, clicks if it is there
 def find_button():
     coords = (1718, 651)
     for m in range(1000):
@@ -34,7 +34,6 @@ def find_button():
             gui.moveTo(coords[0], coords[1])
 
 
-# changes required
 def rich_overnight():
     find_button()
     time.sleep(numpy.random.randint(40, 43))
@@ -44,5 +43,5 @@ def rich_overnight():
     time.sleep(numpy.random.randint(16, 17))
 
 
-while not keyboard.is_pressed("q"):
+while True:
     rich_overnight()
