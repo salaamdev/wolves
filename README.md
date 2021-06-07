@@ -1,70 +1,75 @@
-**FOR THOSE OF YOU WHO CAN NOT WRITE THIS CODE, HERE IS A COMPLETE INSTRUCTIONS FOR YOU**
+**This [**bot**](https://github.com/capRS/wolves) is brought to you by [**RedScorpion**](https://www.youtube.com/channel/UCldtxjrCMtRHJzCUuA8b3kw), check this [**Video**](https://www.youtube.com/watch?v=g7m6EBFWzKM) to see a visual tutorials contact me on discord RedScorpion#5785**
 
-This [**bot**](https://github.com/RedScorpX/WolvesVilleAutoAds) is brought to you by [**RedScorpion**](https://www.youtube.com/channel/UCldtxjrCMtRHJzCUuA8b3kw), check this [**Video**](https://www.youtube.com/watch?v=QEoIjWfHf2c) to see a visual tutorials contact me on discord RedScorpion#5785
+**HOW TO INSTALL AND PREPARE**
 
-Before using this code, go to [python official website ](https://www.python.org/) and download [python 3.7](https://www.python.org/downloads/release/python-370/).
-when installing python, remember to click add [python to PATH](https://datatofish.com/wp-content/uploads/2018/10/0001_add_Python_to_Path.png).
+**STEP 1**
+* click the drop down near clone button on this page 
+* click download ZIP
 
-1. **open up comand prompt as an administrator, then type the following commands one by one.**
-* `pip install pyautogui`
-* `pip install numpy`
-* `pip install keyboard`
-* `pip install pywin32`
+![image1](https://i.imgur.com/NMWHwcG.png)
 
-*if you get an error, re install [python 3.7](https://www.python.org/downloads/release/python-370/) and make sure to check the ["ADD PYTHON TO PATH"](https://datatofish.com/wp-content/uploads/2018/10/0001_add_Python_to_Path.png).*
+**STEP 2**
+* unzip the folder, then access the files inside the folder
+* according to your computer, install eighter python 3.7.0 32-bit or 64 bit
 
-2. **You will need an emulator.**
-* PC users, download an emulator and install wolvesville from playstore. I recommand [**Bluestacks 5**](https://www.bluestacks.com/).
-* MAC users, download an emulator and install wolvesville from playstore. i recommand [**Bluestacks for MAC**](https://www.bluestacks.com/download.html)
+![image2](https://i.imgur.com/sQf7Ckg.png)
 
-3. **Download this zip file https://github.com/caprs/wv/archive/refs/heads/main.zip**
-* head over to the file with the name werewolves
-* right click on it and choose open with IDLE or PYCHARM
-* edit where necessary
+**STEP 3**
+* add python to PATH. this is ultra important, when installing the python package, check this option
 
-**Copy Paste This Script**
-* open IDLE, click file - new file - save - save file as wolvesville, then copy this code and paste there
-* note you need to change **2** things in this code
-```python
-import pyautogui as gui
-import win32api as win
-import win32con
-import keyboard
-import time
-import numpy
+![image3](https://i.imgur.com/CFTe38F.png)
 
-time.sleep(5)
+**STEP 4**
+* click on the directory, delete it and type cmd
 
+![image4](https://i.imgur.com/H8p53oO.png)
 
-def click(x, y):
-    win.SetCursorPos((x, y)) 
-    win.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 0, 0) 
-    time.sleep(0.01) 
-    win.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0)
+**STEP 5**
+* type the following into the console
+```pip install -r requirements.txt```
 
+![image5](https://i.imgur.com/1uu3rzY.png)
 
-#changes required
-def find_button(): 
-    coords = (xcoords, ycoords) # replace the xcoords and y coords to your emulator's bottom pixel seperated by a comma, check the video above 
-    for m in range(0, 1079):
-        if gui.pixel(coords[0], coords[1])[0] == 255:
-            click(coords[0], coords[1])
-            break
-        else:
-            coords = (coords[0], coords[1] - 5)
+**STEP 6**
+* run the [mouse pointer](https://github.com/capRS/wolves/blob/main/MousePosition32bit.exe) app by double clicking
 
+![image6](https://i.imgur.com/3BzSvf9.png)
 
-#changes required
-def rich_overnight():            
-    find_button()
-    time.sleep(numpy.random.randint(7, 8))     
-    click(xcoords, ycoords) # replace the xcoords and y coords to your emulator's back button seperated by a comma, check the video above 
-    time.sleep(numpy.random.randint(4, 6))  
-    find_button()
-    time.sleep(numpy.random.randint(16, 17))   
+**STEP 7**
+* right click the file wolvesville.py
+* click edit with notepad
+* 
+![image7](https://i.imgur.com/USk51L2.png)
 
+**STEP 8**
+* open your [emulator](https://www.androidauthority.com/best-android-emulators-for-pc-655308/), install the wolvesville game, and loggin with your account, then open the advenrtisment wheel
+* place your mouse cursor at the bottom of the [emulator](https://www.androidauthority.com/best-android-emulators-for-pc-655308/) screen
+* read the coordinates on the [mouse pointer](https://github.com/capRS/wolves/blob/main/MousePosition32bit.exe) app
+* then place the same coordinates you read from [mouse pointer](https://github.com/capRS/wolves/blob/main/MousePosition32bit.exe) and place it in the line of code ```coords(mom, dad)``` replace the mom with x coordinates, dad with y coordinated
 
+![image8](https://i.imgur.com/qloDYCr.png)
 
-while keyboard.is_pressed('q') == False:
-    rich_overnight()
-```
+**STEP 9**
+* place your mouse cursor at the back button of the [emulator](https://www.androidauthority.com/best-android-emulators-for-pc-655308/) screen
+* read the coordinates on the [mouse pointer](https://github.com/capRS/wolves/blob/main/MousePosition32bit.exe) app
+* then place the same coordinates you read from [mouse pointer](https://github.com/capRS/wolves/blob/main/MousePosition32bit.exe) and place it in the line of code ```click(me, you)``` replace the mom with x coordinates, dad with y coordinated
+* safe the file and close 
+
+![image9](https://i.imgur.com/rG2JE5h.png)
+ 
+ **STEP 10**
+ * go back to the consol and type ```wolvesville.py```
+ 
+ ![imagw10](https://i.imgur.com/Es3Zg9a.png)
+ 
+ **HOW TO RE USE THE CODE**
+ **STEP 1**
+ * go to the downloaded file
+ * type cmd on the directory
+ * type ```wolvesville.p``` on the console, this runs the code again
+ * to change the coordinates, check **STEP 7** to **STEP 10** above
+ 
+ ![image11](https://i.imgur.com/XXzUGPV.png)
+ 
+  ![imagw12](https://i.imgur.com/Es3Zg9a.png)
+ 
