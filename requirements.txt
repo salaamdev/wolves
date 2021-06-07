@@ -1,0 +1,7 @@
+pyautogui
+pywin32
+keyboard
+numpy
+
+# his code was made possible by RedScorpion
+# contact me on discord RedScorpion#5785
