@@ -1,7 +1,7 @@
 # this code is made and distributed by RedScorpion
 # need help? contact me on discord  RedScorpion#5785
 # for visual toturial, open this link on your browser
-# https://www.youtube.com/watch?v=QEoIjWfHf2c
+# https://www.youtube.com/watch?v=g7m6EBFWzKM
 # for documentation, open this link on your browser
 # https://github.com/capRS/wolves/
 
