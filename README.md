@@ -9,6 +9,7 @@
 ![image1](https://i.imgur.com/NMWHwcG.png)
 
 **STEP 2**
+* use winrar to unzip python, [download it from here](https://www.win-rar.com/predownload.html?&L=0)
 * unzip the folder, then access the files inside the folder
 * according to your computer, install eighter python 3.7.0 32-bit or 64 bit
 
