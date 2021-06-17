@@ -66,7 +66,7 @@
  **STEP 1**
  * go to the downloaded file
  * type cmd on the directory
- * type ```wolvesville.p``` on the console, this runs the code again
+ * type ```wolvesville.py``` on the console, this runs the code again
  * to change the coordinates, check **STEP 7** to **STEP 10** above
  
  ![image11](https://i.imgur.com/XXzUGPV.png)
