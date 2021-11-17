@@ -3,7 +3,7 @@
 # for visual toturial, open this link on your browser
 # https://www.youtube.com/watch?v=g7m6EBFWzKM
 # for documentation, open this link on your browser
-# https://github.com/capRS/wolves/
+# https://github.com/redscorpionx/wolves/
 
 import pyautogui as gui
 import win32api as win
